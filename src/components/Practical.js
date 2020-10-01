@@ -55,69 +55,65 @@ class Practical extends Component {
   render() {
     if (this.state.submitted) {
       return (
-        <div>
-          <p>Company name: {this.state.companyName}</p>
-          <p>Position: {this.state.position}</p>
-          <p>Main tasks: {this.state.mainTasks}</p>
-          <p>Start Date: {this.state.startDate}</p>
-          <p>End Date: {this.state.endDate}</p>
+        <div className="f-grid">
+          <h1 className="f-title">Practical</h1>
+          <p className="f-info">Company name: {this.state.companyName}</p>
+          <p className="f-info">Position: {this.state.position}</p>
+          <p className="f-info">Main tasks: {this.state.mainTasks}</p>
+          <p className="f-info">Start Date: {this.state.startDate}</p>
+          <p className="f-info">End Date: {this.state.endDate}</p>
+          <button onClick={this.handleEdit} className="f-submit">
+            Edit
+          </button>
         </div>
       );
     } else {
       return (
-        <div>
-          <h1>Practical</h1>
-          <label>
-            Company name:
-            <input
-              type="text"
-              onChange={this.handleChange}
-              value={this.state.companyName}
-              name="companyName"
-            />
-          </label>
-          <br />
-          <label>
-            Position:
-            <input
-              type="text"
-              onChange={this.handleChange}
-              value={this.state.postion}
-              name="position"
-            />
-          </label>
-          <br />
-          <label>
-            Main tasks:
-            <input
-              type="text"
-              onChange={this.handleChange}
-              value={this.state.mainTasks}
-              name="mainTasks"
-            />
-          </label>
-          <br />
-          <label>
-            Start Date:
-            <input
-              type="date"
-              onChange={this.handleChange}
-              value={this.state.startDate}
-              name="startDate"
-            />
-          </label>
-          <br />
-          <label>
-            End Date:
-            <input
-              type="date"
-              onChange={this.handleChange}
-              value={this.state.endDate}
-              name="endDate"
-            />
-          </label>
-          <br />
-          <button onClick={this.handleSubmit}>Submit</button>
+        <div className="f-grid">
+          <h1 className="f-title">Practical</h1>
+          <label className="f-label">Company name:</label>
+          <input
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.companyName}
+            name="companyName"
+            className="f-input-text"
+          />
+          <label className="f-label">Position:</label>
+          <input
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.postion}
+            name="position"
+            className="f-input-text"
+          />
+          <label className="f-label">Main tasks:</label>
+          <input
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.mainTasks}
+            name="mainTasks"
+            className="f-input-text"
+          />
+          <label className="f-label">Start Date:</label>
+          <input
+            type="date"
+            onChange={this.handleChange}
+            value={this.state.startDate}
+            name="startDate"
+            className="f-input-text"
+          />
+          <label className="f-label">End Date:</label>
+          <input
+            type="date"
+            onChange={this.handleChange}
+            value={this.state.endDate}
+            name="endDate"
+            className="f-input-text"
+          />
+          <button onClick={this.handleSubmit} className="f-submit">
+            Submit
+          </button>
         </div>
       );
     }

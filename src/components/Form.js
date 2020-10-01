@@ -12,11 +12,13 @@ class Form extends Component {
 
   render() {
     return (
-      <div>
-        <h1>CV Form</h1>
-        <General />
-        <Education />
-        <Practical />
+      <div id="form-container">
+        <h1 className="forms-title">CV Form</h1>
+        <div id="forms-grid">
+          <General />
+          <Practical />
+          <Education />
+        </div>
       </div>
     );
   }

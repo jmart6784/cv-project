@@ -48,49 +48,47 @@ class General extends Component {
   render() {
     if (this.state.submitted) {
       return (
-        <div>
-          <h1>General</h1>
-          <p>Full name: {this.state.fullName}</p>
-          <p>Phone: {this.state.phone}</p>
-          <p>Email: {this.state.email}</p>
-          <button onClick={this.handleEdit}>Edit</button>
+        <div className="f-grid">
+          <h1 className="f-title">General</h1>
+          <p className="f-info">Full name: {this.state.fullName}</p>
+          <p className="f-info">Phone: {this.state.phone}</p>
+          <p className="f-info">Email: {this.state.email}</p>
+          <button onClick={this.handleEdit} className="f-submit">
+            Edit
+          </button>
         </div>
       );
     } else {
       return (
-        <div>
-          <h1>General</h1>
-          <label>
-            Full name:
-            <input
-              type="text"
-              onChange={this.handleChange}
-              value={this.state.fullName}
-              name="fullName"
-            />
-          </label>
-          <br />
-          <label>
-            Phone:
-            <input
-              type="text"
-              onChange={this.handleChange}
-              value={this.state.phone}
-              name="phone"
-            />
-          </label>
-          <br />
-          <label>
-            Email:
-            <input
-              type="email"
-              onChange={this.handleChange}
-              value={this.state.email}
-              name="email"
-            />
-          </label>
-          <br />
-          <button onClick={this.handleSubmit}>Submit</button>
+        <div className="f-grid">
+          <h1 className="f-title">General</h1>
+          <label className="f-label">Full name:</label>
+          <input
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.fullName}
+            name="fullName"
+            className="f-input-text"
+          />
+          <label className="f-label">Phone:</label>
+          <input
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.phone}
+            name="phone"
+            className="f-input-text"
+          />
+          <label className="f-label">Email:</label>
+          <input
+            type="email"
+            onChange={this.handleChange}
+            value={this.state.email}
+            name="email"
+            className="f-input-text"
+          />
+          <button onClick={this.handleSubmit} className="f-submit">
+            Submit
+          </button>
         </div>
       );
     }
