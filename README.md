@@ -1,3 +1,7 @@
+Practice with React controlled inputs
+
+Part of the Odin project: https://www.theodinproject.com/courses/javascript/lessons/cv-application
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
