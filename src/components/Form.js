@@ -17,7 +17,6 @@ class Form extends Component {
         <General />
         <Education />
         <Practical />
-        <button>Submit</button>
       </div>
     );
   }
