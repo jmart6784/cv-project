@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  // font-size: 100%;
+  // font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: rgb(61, 61, 61);
+}
+
+* {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  border: 0px;
+}
+
+#form-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#forms-grid {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 35px;
+}
+
+.forms-title {
+  margin: 75px 0 20px 0;
+}
+
+.f-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  background-color: rgb(65, 202, 134);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.f-grid {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.f-label {
+  margin: 8px 0 8px 0;
+}
+
+.f-input-text {
+  height: 30px;
+  font-size: 20px;
+  width: 90%;
+  background-color: rgb(114, 114, 114);
+}
+
+.f-submit {
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgb(65, 202, 134);
+  border: 0px;
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.f-submit:hover {
+  background-color: rgb(49, 153, 101);
+}
+
+.f-info {
+  font-size: 30px;
+  margin: 10px 5px 10px 5px;
+}
